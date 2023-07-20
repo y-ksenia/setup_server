@@ -3,6 +3,7 @@ sudo apt update
 # install zsh and ohmyzsh
 sudo apt-get install zsh -y
 sudo chsh -s $(which zsh) $(whoami)
+curl -L git.io/antigen > antigen.zsh
 echo "source $HOME/antigen.zsh" >> .zshrc
 echo "antigen init $HOME/.antigenrc" >> .zshrc
 
